@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">pedreragem</string>
+    <dimen name="largura_botao">180dp</dimen>
 </resources>

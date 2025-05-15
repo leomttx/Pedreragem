@@ -3,9 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ECECEC"
     android:layout_height="match_parent">
 
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="139dp"
+        android:background="@color/cor_destaque"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
+    </FrameLayout>
 
     <TextView
         android:id="@+id/textView3"
@@ -13,6 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="Calculos de Materiais"
+        android:textColor="#4A4A4A"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +35,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="52dp"
         android:text="Tijolo Comun"
+        android:textColor="@color/cor_texto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -33,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="28dp"
+        android:textColor="@color/cor_texto"
         android:text="Bloco Cerâmico"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
@@ -43,16 +56,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="32dp"
+        android:textColor="@color/cor_texto"
         android:text="Bloco de Concreto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <FrameLayout
+        android:layout_width="414dp"
+        android:layout_height="38dp"
+        android:background="@color/cor_destaque"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="454dp">
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="93dp"
         android:text="Área:"
+        android:textColor="@color/cor_texto"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
@@ -65,17 +90,18 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="434dp" />
+        tools:layout_editor_absoluteY="494dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="por"
+        android:textColor="@color/cor_texto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="443dp" />
+        tools:layout_editor_absoluteY="503dp" />
 
     <EditText
         android:id="@+id/editTextNumber2"
@@ -85,38 +111,53 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="434dp" />
+        tools:layout_editor_absoluteY="494dp" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Argamassa"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="502dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Revestimento"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="563dp" />
+        android:backgroundTint="@color/cor_botao"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="736dp" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Assentamento"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="563dp" />
+        android:textColor="@color/cor_texto"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="652dp" />
 
-    <Button
-        android:id="@+id/button5"
+
+    <FrameLayout
+        android:layout_width="414dp"
+        android:layout_height="38dp"
+        android:background="@color/cor_destaque"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="592dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="647dp" />
+        android:text="Argamassa"
+        android:textColor="@color/cor_texto"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revestimento"
+        android:textColor="@color/cor_texto"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="652dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
