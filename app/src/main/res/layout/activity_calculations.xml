@@ -3,161 +3,194 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ECECEC"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ECECEC">
 
     <FrameLayout
-        android:layout_width="410dp"
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
         android:layout_height="139dp"
         android:background="@color/cor_destaque"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calculos de Materiais"
+            android:textAlignment="center"
+            android:textColor="#4A4A4A"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView3"
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Calculos de Materiais"
-        android:textColor="#4A4A4A"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="52dp"
-        android:text="Tijolo Comun"
-        android:textColor="@color/cor_texto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tijolo Comum"
+            android:textColor="@color/cor_texto" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="28dp"
-        android:textColor="@color/cor_texto"
-        android:text="Bloco Cerâmico"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloco Cerâmico"
+            android:textColor="@color/cor_texto" />
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
-        android:textColor="@color/cor_texto"
-        android:text="Bloco de Concreto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloco de Concreto"
+            android:textColor="@color/cor_texto" />
+    </LinearLayout>
 
     <FrameLayout
-        android:layout_width="414dp"
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
         android:layout_height="38dp"
+        android:layout_marginTop="92dp"
         android:background="@color/cor_destaque"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="454dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Área:"
+            android:textAlignment="center"
+            android:textColor="@color/cor_texto"
+            android:textSize="20sp" />
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="93dp"
-        android:text="Área:"
-        android:textColor="@color/cor_texto"
-        android:textSize="20sp"
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
 
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="63dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="104dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="494dp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="por"
-        android:textColor="@color/cor_texto"
+        <EditText
+            android:id="@+id/editTextNumber1"
+            android:layout_width="63dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="por"
+            android:textColor="@color/cor_texto" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="63dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="494dp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/cor_destaque"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="503dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="63dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="100dp"
-        android:ems="10"
-        android:inputType="number"
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Argamassa"
+            android:textAlignment="center"
+            android:textColor="@color/cor_texto"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="494dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assentamento"
+            android:textColor="@color/cor_texto"
+            android:layout_marginEnd="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revestimento"
+            android:textColor="@color/cor_texto" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:backgroundTint="@color/cor_botao"
+        android:width="@dimen/largura_botao"
         android:text="Calcular"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="736dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Assentamento"
-        android:textColor="@color/cor_texto"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="652dp" />
-
-
-    <FrameLayout
-        android:layout_width="414dp"
-        android:layout_height="38dp"
-        android:background="@color/cor_destaque"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="592dp">
-
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Argamassa"
-        android:textColor="@color/cor_texto"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="596dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Revestimento"
-        android:textColor="@color/cor_texto"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="652dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
