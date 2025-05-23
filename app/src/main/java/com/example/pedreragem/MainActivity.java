@@ -28,9 +28,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnOptions = findViewById(R.id.entrar);
+        usuario = findViewById(R.id.nameUser);
+        senha = findViewById(R.id.passwordUser);
 
         btnOptions.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this, OptionsActivity.class));
+            String user = usuario.getText().toString().trim();
+            String pass = senha.getText().toString().trim();
+
+            if(user.isEmpty())
         });
+
     }
 }
