@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Por favor, prencha os campos.", Toast.LENGTH_SHORT).show();
             } else {
                 // Lógica de verficação das credenciais
-                if(user.equals("Leomttx") && pass.equals("Senha123")) {
+                if(user.equals("leo") && pass.equals("123")) {
                     //Intenção para a próxima Activity
                     Intent intent = new Intent(MainActivity.this, OptionsActivity.class);
                     intent.putExtra("username", user);

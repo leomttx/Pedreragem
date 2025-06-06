@@ -10,6 +10,7 @@ import android.widget.Button;
 public class OptionsActivity extends AppCompatActivity {
 
     private Button btnCalculosPage;
+    private Button btnEtapasPage;
     private TextView saudacao;
 
     @Override
@@ -18,6 +19,7 @@ public class OptionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_options);
 
         btnCalculosPage = findViewById(R.id.btnCalculos);
+        btnEtapasPage = findViewById(R.id.btnEtapas);
 
         btnCalculosPage.setOnClickListener(view -> {
             startActivity(new Intent(OptionsActivity.this, CalcActivity.class));
@@ -30,6 +32,10 @@ public class OptionsActivity extends AppCompatActivity {
         if (username != null) {
             saudacao.setText("Olá, " + username + "!");
         }
+
+        btnEtapasPage.setOnClickListener(view -> {
+            startActivity(new Intent(OptionsActivity.this, EtapasObrasActivity.class));
+        });
     }
 }
 

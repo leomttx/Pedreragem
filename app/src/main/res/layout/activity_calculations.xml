@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     android:background="#ECECEC">
 
+
     <FrameLayout
         android:id="@+id/frameLayout3"
         android:layout_width="match_parent"
         android:layout_height="139dp"
+        android:layout_marginTop="40dp"
         android:background="@color/cor_destaque"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,48 +32,49 @@
 
     </FrameLayout>
 
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/cbTijoloComun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tijolo Comum"
             android:textColor="@color/cor_texto" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/cbBlocoCeramico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bloco Cerâmico"
             android:textColor="@color/cor_texto" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/cbBlocoConcreto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bloco de Concreto"
             android:textColor="@color/cor_texto" />
     </LinearLayout>
 
+
     <FrameLayout
         android:id="@+id/frameLayout4"
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="40dp"
         android:background="@color/cor_destaque"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
@@ -86,7 +89,6 @@
 
     </FrameLayout>
 
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -100,7 +102,7 @@
 
 
         <EditText
-            android:id="@+id/editTextNumber1"
+            android:id="@+id/etLargura"
             android:layout_width="63dp"
             android:layout_height="41dp"
             android:layout_marginEnd="12dp"
@@ -116,7 +118,7 @@
             android:textColor="@color/cor_texto" />
 
         <EditText
-            android:id="@+id/editTextNumber2"
+            android:id="@+id/etComprimento"
             android:layout_width="63dp"
             android:layout_height="41dp"
             android:ems="10"
@@ -164,7 +166,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/cbAssentamento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Assentamento"
@@ -172,7 +174,7 @@
             android:layout_marginEnd="50dp"/>
 
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/cbRevestimento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Revestimento"
@@ -181,7 +183,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/calcMateriais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"

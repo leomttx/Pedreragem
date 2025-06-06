@@ -6,12 +6,15 @@
     android:layout_height="match_parent"
     android:background="#ECECEC">
 
+
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="151dp"
+        android:layout_marginTop="40dp"
         android:background="@color/cor_destaque"
-        tools:layout_editor_absoluteY="40dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:id="@+id/textView2"
@@ -22,21 +25,21 @@
             android:textAlignment="center"
             android:textColor="#4A4A4A"
             android:textSize="48sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/saudacaoUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="Olá fulano!"
             android:textAlignment="center"
-            android:textSize="20sp"
-            android:text="Olá fulano!" />
+            android:textSize="20sp" />
 
     </FrameLayout>
 
-
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnEtapas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -74,6 +77,6 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEtapas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
